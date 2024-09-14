@@ -1,0 +1,35 @@
+ENCRYPTED_PASSWORD_BINARY = [
+    0b01010100,
+    0b01101000,
+    0b00110001,
+    0b00100100,
+    0b01011111,
+    0b00110001,
+    0b00100100,
+    0b01011111,
+    0b01101101,
+    0b01011001,
+    0b01011111,
+    0b00100100,
+    0b00110011,
+    0b01100011,
+    0b01010010,
+    0b01000101,
+    0b01110100,
+    0b01011111,
+    0b01110000,
+    0b01000000,
+    0b00100100,
+    0b00100100,
+    0b01110111,
+    0b00110000,
+    0b01110010,
+    0b01000100,
+]
+
+ENCRYPTED_PASSWORD = []
+for b in ENCRYPTED_PASSWORD_BINARY:
+    ENCRYPTED_PASSWORD.append(chr((int(b))))
+    
+encrypted_password = ''.join(ENCRYPTED_PASSWORD)
+print(encrypted_password)
